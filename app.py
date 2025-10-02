@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    name = request.args.get("name", "World")
+    name = request.args.get("name", "Hacker")
 
     # ❗ Vulnerable: untrusted input directly passed into the template
     template = f"<h1>Hello {name}!</h1>"
